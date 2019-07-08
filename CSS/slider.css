@@ -1,0 +1,96 @@
+/* .slider-image .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+#image-demo .item img{
+    display: block;
+    width: 100%;
+    height: 650px;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    background: transparent;
+}
+.owl-next img,.owl-prev img{
+    background: none;
+}
+.slider{
+    position: relative;
+    margin-top: 3rem;
+}
+.slider-image{
+    position: absolute;
+    z-index: 99;
+    /* padding-top: 20%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.slider-caption h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 20px;
+
+}
+.slider-caption p{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.slider-social{
+    z-index: 99;
+    text-align: center;
+}
+.slider-social i{
+    margin-right: 15px;
+    color: #e09422;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.slider-social i:hover{
+    color: rgb(255, 255, 255);
+}
+.owl-theme .owl-nav {
+    position: relative;
+    bottom: 315px;
+}
+.owl-prev{
+    position: absolute;
+    left: 20px;
+    z-index: 9;
+}
+.owl-prev img,.owl-next img{
+    width: 20px;
+    height: 20px;
+    color: white;
+
+}
+/* .owl-prev img:active,.owl-next img:active{
+    outline: none;     
+    outline-style: none;     
+    outline-width: 0; 
+    background: 0;
+} */
+.owl-next {
+    position: absolute;
+    right: 20px;
+    z-index: 9;
+}
+
+// CSS cho phần dots
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #e09422;
+    width: 30px;
+    transition: all 0.5s;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #e09422;
+}

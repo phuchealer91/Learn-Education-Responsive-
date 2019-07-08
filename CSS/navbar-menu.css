@@ -1,0 +1,118 @@
+
+.navbar{
+    width: 100%;
+    position: relative;
+}
+.navbar-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #262626;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.navbar-content .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+.navbar-content .navbar-menu{
+    float: right;
+}
+.navbar-content .navbar-menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-content .navbar-menu ul li{
+    list-style-type: none;
+    position: relative;
+}
+.navbar-content .navbar-menu ul li.sub-menu:before{
+    content: "\f0d7";
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: white;
+    right: 5px;
+}
+.navbar-content .navbar-menu ul li.active.sub-menu:before{
+    content: "\f0d8";
+}
+.navbar-content .navbar-menu ul li ul{
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+}
+.navbar-content .navbar-menu ul li.active ul{
+    display: block;
+}
+.navbar-content .navbar-menu .sub-menu ul li {
+    display: block;
+    width: 200px;
+}
+
+.navbar-content .navbar-menu ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.navbar-content .navbar-menu ul li a:hover,
+.navbar-content .navbar-menu ul li a.active{
+    color: white;
+    background: rgb(5, 185, 185);
+}
+.menu-toggle{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 991px){
+    .navbar-content{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .navbar-content .navbar-menu{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        top: 50px;
+        background: #333;
+        left: -100%;
+        transition: 0.5s;
+        /* z-index: 9999; */
+
+    }
+    .navbar-content .navbar-menu ul{
+        display: block;
+        text-align: center;
+    }
+    .navbar-content .navbar-menu ul li a{
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .navbar-menu.active{
+        left: 0;
+    }
+    .navbar-content .navbar-menu ul li.active ul{
+        position: relative;
+        background: #003e6f;
+    }
+    .navbar-content .navbar-menu .sub-menu ul li{
+        width: 100%;
+    }
+}

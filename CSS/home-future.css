@@ -1,0 +1,47 @@
+
+body{
+    font-family: sans-serif;
+}
+.home{
+    margin-top: 5rem;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    background: rgb(46, 154, 255);
+}
+.home-image{
+   flex: 60%;
+    
+}
+.home-image img{
+    max-width: 100%;
+    height:90%;
+}
+.home-intro{
+    flex: 40%;
+    margin-left: 3rem;
+    margin-top: 2.5rem;
+}
+.home-intro h1{
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.home-intro p:nth-of-type(1){
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-right: 5rem;
+    line-height: 2rem;
+    color: black !important;
+    margin-bottom: 2rem;
+}
+.home-intro p{
+    font-size: 1.5rem;
+    color: white;
+}
+.home-intro span{
+    margin-left: 1rem;
+}

@@ -1,0 +1,52 @@
+.team{
+    width: 100%;
+    margin-top: 5rem;
+}
+.team-content{
+    width: 80%;
+    margin: auto;
+}
+/* Use compotent about-us.css */
+.team-member{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.team-member-item{
+    flex: 33%;
+    padding: 3rem 0;
+    text-align: center;
+}
+.team-member-item img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    /* max-width: 70%; */
+}
+.team-member-item p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(228, 140, 19);
+}
+.team-member-item span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.line-black{
+    height: 1px;
+    width: 70%;
+    margin: 1rem auto;
+    background: rgb(0, 0, 0);
+}
+.team-work-social i{
+    font-size: 1.5rem;
+    color: rgb(0, 119, 255);
+    padding: 0 0.3rem;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.team-work-social i:hover{
+    color: #333;
+}

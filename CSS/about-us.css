@@ -1,0 +1,65 @@
+/* About us start */
+.about-us{
+    width: 100%;
+}
+.about-us-content{
+    width: 80%;
+    margin: 0 auto;
+}
+.about-us-caption,.team-title{
+    margin-top: 5rem;
+    text-align: center;
+}
+.about-us-caption h1,.team-title h1{
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+.about-us-caption span,.team-title span{
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    color: rgb(228, 140, 19);
+}
+.about-us-caption p{
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 2.5rem;
+    line-height: 1.7rem;
+}
+.about-us-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5rem;
+
+}
+.about-us-list-item{
+    flex: 25%;
+    padding: 1.5rem 0;
+    text-align: center;
+    /* box-shadow: 2px 0 0 0 rgba(0,0,0,0.19); */
+
+}
+.about-us-list-item:hover{
+    transform: translateY(-9px);
+    border-bottom: 2px solid red;
+    transition: all 0.5s ease-in-out;
+
+}
+.about-us-list-item i{
+    font-size: 2.5rem;
+    color: rgb(0, 102, 255);
+}
+.active-home i,.about-us-list-item h2{
+    color: rgb(228, 140, 19);
+
+}
+.about-us-list-item h2{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.about-us-list-item p{
+    padding:0 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
